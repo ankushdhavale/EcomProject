@@ -41,7 +41,6 @@ const Products = ({ items }) => {
 					))}
 				</div>
 			</div>
-			<TrendingSlider />
 		</>
 	);
 };

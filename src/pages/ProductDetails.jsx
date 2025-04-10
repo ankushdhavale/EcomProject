@@ -16,11 +16,15 @@ const ProductDetails = () => {
 	);
 
 	return (
-		<div>
-			<img src={imgSrc} alt={imgSrc} />
-			<h1>{title}</h1>
-			<p>{price}</p>
-			<p>{description}</p>
+		<div className='mt-20 flex flex-col items-center'>
+			<div className='w-[500px] flex flex-col md:flex-row rounded lg:flex-row gap-6 border p-4 items-center justify-center '>
+				<img className='w-56' src={imgSrc} alt={imgSrc} />
+				<div>
+					<h1 className="text-2xl font-semibold">{title}</h1>
+					<p className="mt-1 mb-1">₹ {price}</p>
+					<p>{description}</p>
+				</div>
+			</div>
 			<div>
 				<h1>Related Products</h1>
 				<div>
